@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css");
+
+:root {
+  /* -------------- Gradient Color -------------- */
+  --grad-UI-1: #a73ef5;     /* Grad-1 */
+  --grad-UI-2: #fb53e1;     /* Grad-1 */
+  --grad-UI-3: #5b5f52;     /* Grad-2 */
+  --grad-UI-4: #00b3cc;     /* Grad-2 */
+  --grad-UI-5: #d6ff7f;     /* Grad-3 */
+  --grad-UI-6: #00b3cc;     /* Grad-3 */
+  --grad-UI-7: #f40076;     /* Grad-4 */
+  --grad-UI-8: #df98fa;     /* Grad-4 */
+  --grad-UI-9: #d73350;     /* Grad-5 */
+  --grad-UI-10: #fc6f69;    /* Grad-5 */
+  --grad-UI-11: #37ccff;    /* Grad-6 */
+  --grad-UI-12: #7b22ff;    /* Grad-6 */
+  --grad-UI-13: #ffcd2b;    /* Grad-7 */
+  --grad-UI-14: #fb07ee;    /* Grad-7 */
+  --grad-UI-15: #cb5eee;    /* Grad-8 */
+  --grad-UI-16: #4be1ec;    /* Grad-8 */
+  --grad-UI-17: #ffa70f;    /* Grad-9 */
+  --grad-UI-18: #e33ed9;    /* Grad-9 */
+  --grad-UI-19: #00fb8e;    /* Grad-10 */
+  --grad-UI-20: #4101b7;    /* Grad-10 */
+  --grad-UI-21: #47a6f3;    /* Grad-11 */
+  --grad-UI-22: #003cc5;    /* Grad-11 */
+  --grad-UI-23: #1abcf4;    /* Grad-12 */
+  --grad-UI-24: #5defb8;    /* Grad-12 */
+  --grad-UI-25: #fe0c6b;    /* Grad-13 */
+  --grad-UI-26: #29055e;    /* Grad-13 */
+  --grad-UI-27: #df98fa;    /* Grad-14 */
+  --grad-UI-28: #9055ff;    /* Grad-14 */
+  --grad-UI-29: #1bf67b;    /* Grad-15 */
+  --grad-UI-30: #0d736e;    /* Grad-15 */
+  --grad-UI-31: #31cf4580;  /* Grad-16 */
+  --grad-UI-32: #50e3c2;    /* Grad-16 */
+  --grad-UI-C1: linear-gradient(to right bottom, #a73ef5, #a73ef5);
+  --grad-UI-C2: linear-gradient(to right bottom, #5b5f52, #00b3cc);
+  --grad-UI-C3: linear-gradient(to right bottom, #d6ff7f, #00b3cc);
+  --grad-UI-C4: linear-gradient(to right bottom, #f40076, #df98fa);
+  --grad-UI-C5: linear-gradient(to right bottom, #d73350, #fc6f69);
+  --grad-UI-C6: linear-gradient(to right bottom, #37ccff, #7b22ff);
+  --grad-UI-C7: linear-gradient(to right bottom, #ffcd2b, #fb07ee);
+  --grad-UI-C8: linear-gradient(to right bottom, #cb5eee, #4be1ec);
+  --grad-UI-C9: linear-gradient(to right bottom, #ffa70f, #e33ed9);
+  --grad-UI-C10: linear-gradient(to right bottom, #00fb8e, #4101b7);
+  --grad-UI-C11: linear-gradient(to right bottom, #47a6f3, #003cc5);
+  --grad-UI-C12: linear-gradient(to right bottom, #1abcf4, #5defb8);
+  --grad-UI-C13: linear-gradient(to right bottom, #fe0c6b, #29055e);
+  --grad-UI-C14: linear-gradient(to right bottom, #df98fa, #9055ff);
+  --grad-UI-C15: linear-gradient(to right bottom, #1bf67b, #4101b7);
+  --grad-UI-C16: linear-gradient(to right bottom, #00fb8e, #0d736e);
+  --grad-UI-C17: linear-gradient(to right bottom, #31cf4580, #50e3c2);
+
+  /* -------------- Color -------------- */
+  --primary: #3db2ff;
+  --secondary: #ffb830;
+  --white: #ffffff;
+  --black: #000000;
+  --light: #f8f9fa;
+  --dark: #212529;
+  --dark-blue: #0e1538;
+  --red: #ff2442;
+  --orange: #ff5200;
+  --green: #54e346;
+  --purple: #c244fb;
+  --pink: #ff577f;
+  --cyan: #0dcaf0;
+  --success: #28ff4c;
+  --warning: #ffc107;
+  --danger: #ff4848;
+  --infor: #0dcaf0;
+  --disable: #cac3c3;
+
+  /* -------------- More -------------- */
+  --font-sans-serif: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu,
+    Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  --font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
+  --font-noto-sans: Quicksand, "Noto Sans", Tahoma, Helvetica, Verdana, Arial;;
+  --font-size: 62.5%;
+  --text-body: #242222;
+  --bg-body: #eeeeee;
+  --text-disable: #817c7c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-noto-sans);
+  font-size: var(--font-size);
+  color: var(--text-body);
+  background: var(--bg-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary);
+}
+
+.wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 30px;
+}
+
+/* -------------- Text -------------- */
+
+.grad-text {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-success {
+  color: var(--success);
+}
+
+.text-infor {
+  color: var(--infor);
+}
+
+.text-warning {
+  color: var(--warning);
+}
+
+.text-danger {
+  color: var(--danger);
+}
+
+.text-disable {
+  color: var(--text-disable);
+}
+
+/* -------------- Border -------------- */
+
+.border-success {
+  border-left: 5px solid var(--success);
+}
+
+.border-infor {
+  border-left: 5px solid var(--infor);
+}
+
+.border-warning {
+  border-left: 5px solid var(--warning);
+}
+
+.border-danger {
+  border-left: 5px solid var(--danger);
+}
+
+/* -------------- Button -------------- */
+
+.btn {
+  padding: 12px 48px;
+  border-radius: 3.125em;
+  border: none;
+  cursor: pointer;
+  font-size: calc(1em + 0.3vh + 0.3vw);
+  box-shadow: 1px 1px 4px var(--dark);
+}
+
+.btn.btn-primary {
+  background-color: var(--primary);
+}
+
+.btn.btn--success {
+  background-color: var(--success);
+}
+
+.btn.btn--infor {
+  background-color: var(--infor);
+}
+
+.btn.btn--warning {
+  background-color: var(--warning);
+}
+
+.btn.btn--danger {
+  background-color: var(--danger);
+}
+
+.btn.btn--disable {
+  background-color: var(--disable);
+  color: var(--text-disable);
+  cursor: default !important;
+  opacity: 0.6;
+  box-shadow: unset;
+}
+
+.btn-size-m {
+  padding: 16px 64px;
+}
+
+.btn-size-l {
+  padding: 20px 100px;
+}
+
+.btn-fullwidth {
+  padding: 12px 0;
+  width: 100%;
+}
+
+.btn:active {
+  box-shadow: 1px 1px 1px var(--dark);
+}
+
+.btn.btn--disable:active {
+  box-shadow: unset;
+}
+
+/* -------------- Input -------------- */
+.inputForm {
+  height: 3em;
+  outline: none;
+  border: 1px solid #ccc;
+  padding: 0 12px;
+  font-size: calc(1em + 0.5vh);
+  border-radius: 50px;
+  transition: all 0.1s linear;
+}
+
+.inputForm:focus {
+  outline: #31cf466c solid 2px;
+  border: none;
+}
+
+/* -------------- Search -------------- */
+
+.search-square-10 {
+  padding: 12px 24px;
+  border-radius: 10px;
+  background-color: red;
+}
+
+/* -------------- Grid System -------------- */
+
+.container,
+.container-fluid,
+.container-xxl,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm {
+  width: 100%;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container-sm,
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1280px) {
+  .container-xl,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 1200px;
+  }
+}
+@media (min-width: 1400px) {
+  .container-xxl,
+  .container-xl,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 1320px;
+  }
+}
